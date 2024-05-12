@@ -46,16 +46,20 @@ body {
     color: var(--primary-color);
     font-size: 2rem;
     text-align: center;
-    top: 40px;
   }
 
-  article {
+  .hero article {
     position: absolute;
     margin: 20px;
     padding: 20px;
     background-color: var(--paragraph-background-color);
     color: var(--paragraph-color-on-color);
     top: 120px;
+  }
+
+  .hero article h1{
+    position: relative;
+
   }
 
 .hero article img {
