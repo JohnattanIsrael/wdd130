@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,300;0,400;0,600;0,900;1,300;1,400;1,600;1,900&display=swap');
+
+:root {
+
+    --primary-color: #088EE3   ;
+    --secondary-color: #271960 ;
+    --accent1-color: #da7715;
+    --accent2-color: #f5fb28;
+  
+    --heading-font: Montserrat Alternates;
+    --paragraph-font: Montserrat, Helvetica, sans-serif;
+    --paragraph-color-on-color: white;
+    --paragraph-background-color: #271960  ;
+  
+    --nav-link-color: white;
+    --nav-background-color: #088EE3;
+    --nav-hover-link-color: white;
+    --nav-hover-background-color: #271960;
+}
+
+body {
+    font-family: var(--paragraph-font);
+    max-width: 960px;
+    padding: 20px;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--headline-color-on-white);
+  }
+
+  .hero {
+    position: relative;
+  }
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .hero h1 {
+    width: 100%;
+    position: absolute;
+    color: var(--primary-color);
+    font-size: 2rem;
+    text-align: center;
+    top: 40px;
+  }
+
+  article {
+    position: absolute;
+    margin: 20px;
+    padding: 20px;
+    background-color: var(--paragraph-background-color);
+    color: var(--paragraph-color-on-color);
+    top: 120px;
+  }
+
+.hero article img {
+    width: 200px;
+    height: auto;
+    float: right;
+    position: relative;
+    padding: 10px;
+}
+
+section img {
+    width: 70%;
+    height: auto;
+}
+
+.sociallinks img{
+    width: 50px;
+}
+
+.sociallinks a {
+    text-decoration: none;
+}
