@@ -1,28 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --font-size-header: 25px;
+    --font-size-p: 16px;
+    --font-color-highlight: black;
+    --font-color: #F5F2DC;
+    --orange: #FF4001;
+    --dark-background: #262526;
+    --soft-orange: #FAAB8D;
+    --clear-cream: #FEEFDC;
+    --pale-blue: #50B1C1;
+}
+
 main {
     max-width: 800px;
 }
 
 nav {
-    background-color: darkblue;
+    background-color: var(--pale-blue);
     padding: 10px;
 }
 
 nav a {
-    color: white;
+    color: var(--font-color);
     display: block;
     padding: 20px;
 }
 
 h1 {
-    color: darkblue;
+    color: var(--font-color-highlight);
 }
 
 main img {
     width: 150px;
     height: auto;
-    border: 1px solid black;
+    border: 1px solid var(--dark-background);
     padding: 2px;
-    box-shadow: 0 0 30px gray;
+    box-shadow: 0 0 30px var(--soft-orange);
+    float: right;
 }
 
 p {
@@ -31,11 +50,12 @@ p {
 
 aside {
     width: 400px;
-    margin: 25px 25px;
-    border: 2px rgba(0, 0, 0, .8);
-    padding: 15px 25px;
-    background-color: #454445;
-    color: #F5F2DC;
+}
+
+aside h2 {
+    position: absolute;
+    color: var(--clear-cream);
+    text-align: center;
 }
 
 aside img {
@@ -49,6 +69,16 @@ aside p {
 
 footer {
     margin-top: 15px;
-    border-top: 2px #009494 dotted;
+    border-top: 2px var(--pale-blue) dotted;
     text-align: center;
+}
+
+/* Class Selectors */
+
+.box {
+    margin: 1rem;
+    border: 1px solid rgb(0 0 0 / 10%);
+    padding: 1rem;
+    background-color: var(--soft-orange);
+    color: var(--dark-background);
 }
