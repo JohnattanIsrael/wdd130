@@ -6,12 +6,12 @@
 
 :root {
     --font-color-dark: #262526;
-    --font-color-light: #F5F2DC;
-    --accent-color-2: #FF4001;
+    /* --font-color-light: #F5F2DC; */
+    /* --accent-color-2: #FF4001; */
     --accent-color-1: #262526;
     --primary-color: #50B1C1;
-    --secundary-color: #FAAB8D;
-    --accent-color-3: #FEEFDC;
+    /* --secundary-color: #FAAB8D; */
+    /* --accent-color-3: #FEEFDC; */
     --heading-font: Montserrat,
         Helvetica,
         sans-serif;
