@@ -6,10 +6,10 @@
 
 :root {
     --font-color-dark: #262526;
-    --font-color-light: #F5F2DC;
-    --primary-color: #50B1C1;
-    --soft-orange: #FAAB8D;
-    --clear-cream: #FEEFDC;
+    --font-color-light: #FFFDF5;
+    --primary-color: #167789;
+    --soft-orange: #D96F4F;
+    --clear-cream: #FFF7E8;
     --heading-font: Montserrat,
         Helvetica,
         sans-serif;
@@ -38,7 +38,7 @@ footer {
 footer {
     display: grid;
     grid-template-columns: 5fr 2fr;
-    border-top: 1px solid black;
+    border-top: 1px solid var(--soft-orange);
 }
 
 h1,
