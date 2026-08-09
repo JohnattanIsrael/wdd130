@@ -6,8 +6,10 @@
 
 :root {
     --font-color-dark: #262526;
-    --accent-color-1: #262526;
+    --font-color-light: #F5F2DC;
     --primary-color: #50B1C1;
+    --soft-orange: #FAAB8D;
+    --clear-cream: #FEEFDC;
     --heading-font: Montserrat,
         Helvetica,
         sans-serif;
@@ -55,12 +57,38 @@ article,
     font-family: var(--body-font);
 }
 
+.header-container {
+    display: grid;
+    grid-template-columns: 3fr 4fr;
+    padding: 20px 0px;
+}
+
+.header-container img {
+    justify-self: center
+}
+
+.header-container nav {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.header-container nav a {
+    text-decoration: none;
+    font-family: var(--heading-font);
+    color: var(--font-color-light);
+    font-weight: 700
+}
+
 .socialmedia a {
     text-decoration: none;
 }
 
 .hero {
     position: relative;
+    padding-top: 20px;
 }
 
 .hero img {
@@ -87,8 +115,8 @@ h1 {
     padding: 16px;
     text-align: left;
     opacity: 0.8;
-    background-color: var(--accent-color-1);
-    color: #fff;
+    background-color: var(--clear-cream);
+    color: var(--font-color-dark);
     display: flex;
 }
 
@@ -118,4 +146,31 @@ h2 {
     margin-right: 0px;
     padding-left: 0px;
     padding-right: 0px;
+}
+
+.history-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 5fr;
+}
+
+.history-section h2 {
+    color: var(--font-color-dark);
+    grid-column: 1/4;
+}
+
+.history-section img {
+    width: 100%;
+    align-self: center;
+}
+
+.adventures {
+    display: flex;
+    gap: 20px;
+    flex-wrap: nowrap;
+    overflow: hidden;
+}
+
+.adventures figure img {
+    width: 100%;
 }
